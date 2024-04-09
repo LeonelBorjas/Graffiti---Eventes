@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>eventes</title>
+</head>
+
+<body>
+    <main class="flex flex-col justify-center items-center">
+        <div id="ejercicio1" class="h-[300px] w-[300px] bg-gray-400 mt-5"></div>
+        <button id="cambiar" class="border-2 border-black bg-yellow-400 p-2 mt-5">Cambiar</button>
+        <div id="ejercicio2" class="h-[300px] w-[300px] bg-gray-400 mt-5"></div>
+        <input type="text" id="texto" class="border border-black m-2" placeholder="ingrese texto">
+        <button id="cambiar2" class="border-2 border-black bg-yellow-400 p-2 mt-5">Reset</button>
+        <div id="ejercicio3" class="h-[300px] w-[300px] bg-gray-400 mt-5 flex flex-col justify-center items-center">
+            <div>
+                <h2 class="text-2xl font-bold">Estatura</h2>
+                <h4 class="text-gray-600">en centimetros</h4>
+                <input type="text" id="estatura" class="border border-black">
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold">Peso</h2>
+                <h4 class="text-gray-600">en kilogramos</h4>
+                <input type="text" id="peso" class="border border-black">
+            </div>
+            <button id="cambiar3" class="border-2 border-black bg-yellow-400 p-1 mt-5">Calcular</button>
+            <div>
+                <h2 class="text-2xl font-bold">Resultado</h2>
+                <h4 class="text-gray-600">su indice de masa corporal es: </h4>
+                <input type="text" id="resultado" class="border border-black" disabled>
+            </div>
+        </div>
+        <div id="ejercicio4" class="h-[300px] w-[300px] bg-gray-400 mt-5 flex flex-col justify-center items-center">
+            <div>
+                <h2 class="text-2xl font-bold">Monto Moneda local</h2>
+                <h4 class="text-gray-600">sin comas ni puntos</h4>
+                <input type="text" id="monedaLocal" class="border border-black">
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold">Dolares</h2>
+                <h4 class="text-gray-600">sin comas ni puntos</h4>
+                <input type="text" id="dolar" class="border border-black">
+            </div>
+            <div class="flex gap-10">
+                <button id="calcularMoneda" class="border-2 border-black bg-yellow-400 p-1 mt-5">convertir</button>
+                <button id="limpiarMoneda" class="border-2 border-black bg-yellow-400 p-1 mt-5">borrar</button>
+            </div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+
+</html>

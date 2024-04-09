@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Graffiti Exercises</title>
+</head>
+
+<body class="flex">
+    <header class="grow-0">
+
+    </header>
+    <main class="flex grow border border-black border-solid rounded-md">
+        <section
+            class="flex justify-center items-center h-screen w-1/3 border border-black border-solid bg-gray-400 rounded-md">
+            <form id="form"
+                class="flex flex-col flex-wrap items-center content-center mb-6vh h-5/6 w-11/12 border border-black border-solid bg-gray-200 rounded-md relative py-4 mx-4">
+
+                <label class="w-[70%] font-bold">Ingrese un texto
+                    <input id="input"
+                        class="my-2 bg-blue-200 border border-blue border-solid shadow-[-3px_3px_2px_0px_#61d5ff] h-[3rem] text-center"
+                        type="text" name="input" id="input">
+                </label>
+
+                <label class="my-4 flex flex-wrap justify-center w-[70%] font-bold">Seleccione un color de fondo
+                    <input class="h-[100%] w-[30%] my-1" type="color" name="color" id="color" value="#61d5ff">
+                </label>
+
+                <label class="mt-[8rem] font-extrabold text-2xl">Graffiti
+                    <input class="w-4 h-4" type="checkbox" name="Graffiti" id="Graffiti">
+                </label>
+                <label class="mt-8 font-extrabold text-2xl">Poster
+                    <input class="w-4 h-4" type="checkbox" name="Poster" id="Poster">
+                </label>
+
+                <button id="boton" type="submit"
+                    class="border border-black border-solid bg-yellow-400 w-[60%] h-[4.5vw] font-extrabold text-3xl text-left px-4 shadow-[-3px_3px_2px_1px_black] absolute bottom-14">Submit
+                </button>
+            </form>
+        </section>
+        <section
+            class="flex justify-center items-center h-screen w-2/3 border border-black border-solid rounded-md bg-pink-200">
+
+            <div id="wall-section"
+                class="h-5/6 w-11/12 border border-black border-solid bg-yellow-100 rounded-md overflow-scroll">
+
+            </div>
+        </section>
+
+        <script src="./main.js"></script>
+    </main>
+    <footer class="grow-0"></footer>
+</body>
+
+</html>
